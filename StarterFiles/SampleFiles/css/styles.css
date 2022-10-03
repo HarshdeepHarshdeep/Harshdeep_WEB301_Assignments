@@ -1,4 +1,47 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-size: 14px;
+    
+}
+
+b{
+    display: none;
+}
+
+img{
+    width: 100%;
+}
+
+@media screen and (min-width: 700px)
+{
+    body{
+        font-size: 12px;
+    }
+
+    p{
+        width: 650px;
+        text-align: center;
+        padding-right: 25%;
+        padding-left: 25%;
+
+        
+        
+    }
+
+    b{
+        display:contents
+    }
+
+
+}
+
+@media screen and (min-width: 1024px){
+    p{
+        width: 1000px;
+        padding-right: 12%;
+        padding-left: 12%;
+      
+        
+    }
 }
