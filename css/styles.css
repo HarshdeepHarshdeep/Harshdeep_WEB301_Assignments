@@ -6,6 +6,7 @@ html, body{
 
 img{
     max-width: 100%;
+    margin: 100px 10px 30px 10px;
 }
 
 footer{
@@ -15,15 +16,22 @@ footer{
  padding: 20px;
 }
 
+h2{
+    margin-top: 80px;
+}
 
+.information{
+    text-align: left;
+}
 
 p{
     font-size: 1.3em;
 }
 
 .header{
-    background-color: black;
-    color: white;
+    background-color: rgb(110, 74, 74);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
 }
 
 .row{
@@ -32,9 +40,9 @@ p{
 
 nav{
     padding: 10px 15px;
-    margin-bottom: 30px;
+    background-color: black;
     position: relative;
-    border-bottom: 1px solid crimson;
+    color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,22 +60,25 @@ nav a{
     text-decoration: none;
 }
 nav h1 a{
-    color: crimson;
+    color: rgb(255, 255, 255);
 }
 nav ul{
     list-style: none;
 }
 nav ul li{
     display: inline-block;
+    color: white;
 }
 nav ul li a{
     display: block;
     padding: 5px 20px;
     transition: all .5s;
     font-weight: 500;
+    color: aliceblue;
 }
 nav ul li a:hover{
-    color: crimson;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
 }
 
 nav #nav-links-sm{
