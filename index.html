@@ -25,34 +25,48 @@
 
 
             <div class="col-lg-8">
-              <form>
+              <form class="needs-validation" novalidate>
                 <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input type="name" class="form-control" id="name" aria-describedby="fullname" placeholder="Enter Full Name">
 
+                  <label for="name">Full Name</label>
+                  <input type="name" class="form-control" id="name" aria-describedby="fullname" placeholder="Enter Full Name" required>
+                  <div class="invalid-feedback">
+                    Please Enter your Full Name.
+                  </div>
                   
                   <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <div class="invalid-feedback">
+                    Please Enter your Email Address
+                  </div>
 
                   <label for="Businessname">Business Name</label>
-                  <input type="Businessname" class="form-control" id="Businessname" aria-describedby="Businessname" placeholder="Enter Business Name">
-
+                  <input type="Businessname" class="form-control" id="Businessname" aria-describedby="Businessname" placeholder="Enter Business Name" required>
+                  <div class="invalid-feedback">
+                    Please Enter your Business Name
+                  </div>
 
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked required>
                         <label class="form-check-label" for="exampleRadios1">
                           Non-Profit Business
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" required>
+                        
                         <label class="form-check-label" for="exampleRadios2">
                           For-Profit Business
                         </label>
+                        <div class="invalid-feedback">
+                          Please Enter Business Type
+                        </div>
+      
+                        
                       </div>
 
                       <label for="inputState">Province</label>
-                      <select id="inputState" class="form-control">
+                      <select id="inputState" class="form-control" requireds>
                         <option selected>Ontario</option>
                         <option>Alberta</option>
                         <option>British Columbia</option>
@@ -67,6 +81,9 @@
                         <option>Yukon</option>
                   
                       </select>
+                      <div class="invalid-feedback">
+                        Please Select your Province
+                      </div>
                       
 
                       <div class="form-check form-check-inline">
@@ -101,6 +118,7 @@
 
 
                 </div>
+
                 
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
