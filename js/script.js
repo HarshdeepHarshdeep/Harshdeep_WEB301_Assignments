@@ -10,9 +10,12 @@
     form.addEventListener('submit', event => {
       event.preventDefault()
       event.stopPropagation()
-      if (!form.checkValidity()) {
+      if (form.checkValidity()) {
         event.preventDefault()
         event.stopPropagation()
+
+        const SubmitModal = new bootstrap.Modal('#formSubmit');
+        SubmitModal.show();
       }
 
       
